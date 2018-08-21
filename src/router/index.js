@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+import Login from '@/pages/Login'
 import Main from '@/pages/Main'
 import Dashboard from '@/pages/Dashboard'
 import Member from '@/pages/Member'
@@ -17,6 +18,12 @@ let routes = [{
     name: '首页'
   }]
 }]
+
+routes.push({
+  path: '/login',
+  name: 'Login',
+  component: Login,
+})
 
 routes.push({
   path: '/member',
